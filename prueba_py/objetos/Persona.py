@@ -34,4 +34,7 @@ class Persona():
             __letra = "TRWAGMYFPDXBNJZSQVHLCKE"
             self.__dni = numero + __letra[int(numero) % 23]
         else:
-            self.__dni = ""   
+            self.__dni = ""
+
+    def __str__(self):
+        return 'nombre=' + self.nombre + ', edad='+ str(self.edad) +  ', dni='+ str(self.dni)
