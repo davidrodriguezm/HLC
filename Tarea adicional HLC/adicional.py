@@ -25,10 +25,9 @@ def procesar_json():
 
 lista = procesar_json()
 suma = 0
-
 print("Diccionarios ordenados por orden descendente de cpu:")
 for i in lista:
     suma += i.get("mem")
     print(i)
 else:
-    print("\nLa suma de todos los men:",suma)
+    print("\nLa suma de todos los mem:",suma)
