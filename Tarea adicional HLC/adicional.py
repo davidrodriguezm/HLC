@@ -1,7 +1,6 @@
 import json
 
-def filtrar_status( dic ): 
-    
+def filtrar_status( dic ):  
     if dic.get("status") == "running" :
         return True
     else :
