@@ -1,0 +1,10 @@
+A partir de cualquiera de los dos ficheros, la tarea consiste en procesarlos (los dos contiene la misma información, 
+o muy parecida, uno en forma de tabla y otro en formato json). La idea es que mediante un script de Python, almacenes en 
+un diccionario por cada VMID de una máquina que esté en "status" como "running", se guarde como valor una tupla 
+con: name, cpu, mem.
+
+Será necesario también que ordenes por cpu en orden descendente (del más grande al más chico). Puedes usar otra estructura
+si quieres, para tener esta información. Además, para todas esas tuplas guardadas, quiero un algoritmo que me sume todas
+las "mem" de ese diccionario.
+
+PD: Creo que te será más fácil procesar el fichero con formato json.
