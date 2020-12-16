@@ -1,14 +1,19 @@
 import json
 
-def procesar_json( numero = 0 ):
+def filtrar_status( dic ): 
+    
+    if dic.get("status") == "running" :
+        return True
+    else :
+        return False
+
+def procesar_json():
     resul = None
 
     with open("salida-json.txt") as fichero:
         datos = json.load( fichero )
-        resul = datos[ numero ]
+        resul = list(filter( filtrar_status, datos ))
 
     return resul
 
-objeto = int( input("Dime el objeto json \n") )
-
-print( procesar_json( objeto ) )
+print( procesar_json() )
