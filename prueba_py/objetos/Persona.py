@@ -1,5 +1,4 @@
 class Persona():
-
     def __init__(self,nombre="",edad=0,numero="12345678"):
         self.nombre = nombre
         self.edad = edad

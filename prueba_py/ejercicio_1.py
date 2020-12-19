@@ -1,6 +1,5 @@
 import math
 # He probado varias cosas en este ejercicio
-
 edad = int(input("Dime tu edad:"))
 nombre = input("Dime tu nombre:")
 if edad>=18:

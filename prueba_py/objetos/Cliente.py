@@ -1,7 +1,6 @@
 from objetos.Persona import Persona
 
 class Cliente(Persona):
-
     def __init__(self,nombre="",edad=0,numero="12345678", compra=[]):
         super().__init__(nombre,edad,numero)
         self.compra = compra

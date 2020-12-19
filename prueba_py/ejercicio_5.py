@@ -1,17 +1,20 @@
 import random
 
 def maxMinSum(lista):
-    return ( max(lista), min(lista), sum(lista) )
-# retorna una tupla de 3 valores
+    return ( max(lista), min(lista), sum(lista) ) # retorna una tupla de 3 valores
 
-numeros = []
+lista = []
+for i in range(15):
+    lista.append( random.randint(1,10) )
 
-for i in range(10):
-    numeros.append(random.randint(1,100))
-
-maximo, minimo, suma = maxMinSum(numeros)
-print("el maximo=",maximo,",el minimo=",minimo,", la suma= ",suma)
-numeros.sort(reverse=True)
-print("lista ordenada de mayor a menor:",numeros)
-numeros.sort()
-print("lista ordenada de menor a mayor:",numeros)
+print("lista:", lista)
+maximo, minimo, suma = maxMinSum( lista )
+print( "maximo = {}, el minimo = {}, la suma = {}".format( maximo, minimo, suma ) )
+lista.sort(reverse=True)
+print("lista ordenada de mayor a menor:", lista)
+lista.sort()
+print("lista ordenada de menor a mayor:",lista)
+impares = [ i for i in lista if i % 2 != 0 ]
+print("solo los impares:", impares)
+conjunto = set( lista )
+print("lista sin numeros repetidos:", conjunto)
