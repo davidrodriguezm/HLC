@@ -1,0 +1,7 @@
+fecha: 4/5/2015, fruta: Apples, cantidad: 73
+fecha: 4/5/2015, fruta: Cherries, cantidad: 85
+fecha: 4/6/2015, fruta: Pears, cantidad: 14
+fecha: 4/8/2015, fruta: Oranges, cantidad: 52
+fecha: 4/10/2015, fruta: Apples, cantidad: 152
+fecha: 4/10/2015, fruta: Bananas, cantidad: 23
+fecha: 4/10/2015, fruta: Strawberries, cantidad: 98
