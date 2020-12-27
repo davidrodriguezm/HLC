@@ -21,15 +21,6 @@ try:
             else:
                 f_txt.writelines("fecha: {}, fruta: {}, cantidad: {}\n".format( i[0], i[1], i[2]) )
 
-    with open("ficheros/salida.txt") as f_info:
-        while True:
-            linea = f_info.readline()
-            if linea == "":
-                break
-            else:
-                print(linea,end="")
-        print()    
-
     with open("ficheros/resultado.csv","w") as f_resul:
             imprimir = []
             escribe = csv.writer(f_resul)
