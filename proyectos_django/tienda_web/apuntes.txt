@@ -1,0 +1,2 @@
+manage.py runserver
+curso:  https://www.youtube.com/watch?v=Opm8KKR99kQ&list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB&index=9
