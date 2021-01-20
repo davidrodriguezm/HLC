@@ -1,2 +1,8 @@
-manage.py runserver
-curso:  https://www.youtube.com/watch?v=sISjIaa_-7g&list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB&index=11
+arrancar servidor:  manage.py runserver
+Crear una app:   manage.py startapp nombre
+comprobar app:   manage.py check nombre
+crear migraciones:   manage.py makemigrations
+crear sql:    manage.py sqlmigrate nombre-app numero-migracion
+subir migraciones a la base de datos:   manage.py migrate
+abrir shell python:   manage.py shell   salir:   exit()
+curso:  https://www.youtube.com/watch?v=IEHOMF2Pukg&list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB&index=12
