@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Buscar resultado{% endblock %}
+
+{% block content %} 
+
+<h2>Articulos:</h2>
+
+{% if articulos %}
+<p>Articulos encuntrados: {{ articulos | length }}</p>
+<ul>
+    {% for arti in articulos %}
+    <li>
+        {{arti}}
+    </li>
+    {% endfor %}
+</ul>
+{% elif not mensage %}
+<p>No se han encuntrado articulos con ese nombre</p>
+{% endif %}
+
+{% if mensage %}
+<p>{{mensage}}</p>
+{% endif %}
+
+{% endblock %}

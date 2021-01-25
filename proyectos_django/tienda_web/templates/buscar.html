@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block title %}Buscar producto{% endblock %}
+
+{% block content %} 
+
+<h2>Buscar producto, por su nombre:</h2>
+<form class="form-inline" action="/buscar/" method="POST"> {% csrf_token %}
+    <input class="form-control form-control-sm mr-md-2" type="search" placeholder="Buscar producto" name="producto">
+    <input class="btn btn-primary btn-sm" type="submit">
+</form>
+
+{% endblock %}

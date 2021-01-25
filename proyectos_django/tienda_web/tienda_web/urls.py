@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from tienda_web.views import saludo, captura
+from gestion_pedidos.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
     path('captura/<int:edad>/<nombre>', captura),
+    path('buscar/', buscar),
+    path('add_cliente/', add_cliente),
 ]

@@ -5,4 +5,6 @@ crear migraciones:   manage.py makemigrations
 crear sql:    manage.py sqlmigrate nombre-app numero-migracion
 subir migraciones a la base de datos:   manage.py migrate
 abrir shell python:   manage.py shell   salir:   exit()
-curso:  https://www.youtube.com/watch?v=IEHOMF2Pukg&list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB&index=12
+curso:  https://www.youtube.com/watch?v=1DSi4in2VNA&list=PLU8oAlHdN5BmfvwxFO7HdPciOCmmYneAB&index=26
+Django administration:    http://127.0.0.1:8000/admin/login/?next=/admin/
+crear super usuario:    manage.py createsuperuser   usuario: david, contra: 12345,  email: alum.drodriguezm@iesalixar.org

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Agregar cliente{% endblock %}
+
+{% block content %} 
+
+<h2>Agregue un clinente nuevo:</h2>
+<form action="/add_cliente/" method="POST"> {% csrf_token %}
+    <table>
+        {{ formulario.as_table }}
+    </table>
+    <input class="btn btn-primary btn-sm" type="submit">
+</form>
+
+{% if mensage %}
+<p>{{ mensage }}</p>
+{% endif %}
+
+{% if error %}
+<p>{{ error }}</p>
+{% endif %}
+
+{% endblock %}
