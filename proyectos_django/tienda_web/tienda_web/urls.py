@@ -20,8 +20,8 @@ from gestion_pedidos.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('saludo/', saludo),
-    path('captura/<int:edad>/<nombre>', captura),
-    path('buscar/', buscar),
-    path('add_cliente/', add_cliente),
+    path('saludo/', saludo.as_view(), name='saludo'),
+    path('captura/<int:edad>/<nombre>', captura.as_view(), name='captura'),
+    path('buscar/', buscar.as_view(), name='buscar'),
+    path('add_cliente/', add_cliente.as_view(), name='add_cliente'),
 ]
